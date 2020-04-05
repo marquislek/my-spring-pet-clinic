@@ -2,9 +2,11 @@ package com.springframework.petclinic.services.map;
 
 import com.springframework.petclinic.model.PetType;
 import com.springframework.petclinic.services.PetTypeService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
+@Service
 public class PetTypeMapService extends AbstractMapService<PetType, Long> implements PetTypeService {
 
     @Override
@@ -13,8 +15,8 @@ public class PetTypeMapService extends AbstractMapService<PetType, Long> impleme
     }
 
     @Override
-    public PetType findById(Long aLong) {
-        return super.findByID(aLong);
+    public PetType findById(Long id) {
+        return super.findByID(id);
     }
 
     @Override
@@ -28,7 +30,7 @@ public class PetTypeMapService extends AbstractMapService<PetType, Long> impleme
     }
 
     @Override
-    public void deleteByID(Long aLong) {
-        super.deleteById(aLong);
+    public void deleteByID(Long id) {
+        super.deleteById(id);
     }
 }
