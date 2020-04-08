@@ -19,7 +19,7 @@ public class VisitMapService extends AbstractMapService<Visit, Long> implements 
 
     @Override
     public Visit findById(Long aLong) {
-        return super.findByID(aLong);
+        return super.findById(aLong);
     }
 
     @Override

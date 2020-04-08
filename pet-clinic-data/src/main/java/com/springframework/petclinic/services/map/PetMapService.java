@@ -18,7 +18,7 @@ public class PetMapService extends AbstractMapService<Pet, Long> implements PetS
 
     @Override
     public Pet findById(Long id) {
-        return super.findByID(id);
+        return super.findById(id);
     }
 
     @Override
